@@ -1,13 +1,15 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <RouterLink to="/catalog">Ir a catalog.</RouterLink>
-    <RouterLink to="/home">Ir a home.</RouterLink>
-  </main>
+  <NuxtLayout name="index-layout">
+    <main>
+      <RouterLink to="/catalog">go to catalog.</RouterLink>
+      <RouterLink to="/home">go home.</RouterLink>
+    </main>
+  </NuxtLayout>
 </template>
 
-<style scoped>
+<style>
 main {
   display: flex;
   flex-direction: column;

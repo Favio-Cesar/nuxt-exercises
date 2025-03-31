@@ -1,35 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({ layout: "catalog-layout" });
+</script>
 
 <template>
-  <header>
-    <h1>Titulo catalog</h1>
+  <NuxtLayout name="catalog-layout"
+    ><header>
+      <h1>Catalog Title</h1>
 
-    <RouterLink to="/home">Ir a home.</RouterLink>
-  </header>
+      <RouterLink to="/home">go home.</RouterLink>
+    </header></NuxtLayout
+  >
 </template>
-
-<style scoped>
-main {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  padding-right: calc(var(--section-gap) / 2);
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  padding-right: calc(var(--section-gap) / 2);
-}
-
-.logo {
-  margin: 0 2rem 0 0;
-}
-
-header .wrapper {
-  display: flex;
-  place-items: flex-start;
-  flex-wrap: wrap;
-}
-</style>

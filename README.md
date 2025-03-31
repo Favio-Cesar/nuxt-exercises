@@ -1,75 +1,39 @@
-# Nuxt Minimal Starter
+# Ejercicio 1 Nuxt, Crear proyecto y rutas
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- Crea una página `home`
+- Crea una página `catalogo`
+- Añade tu `reset.css`
+- Añade algo en cada página para diferenciarlas
+- añade un botón que redirija a cada página
 
-## Setup
+# Ejercicio 2 Nuxt, Crea un layout
 
-Make sure to install dependencies:
+- Crea un layout para todas las páginas que tenga un `<nav>` y un `<footer>` y que cada uno de ellos tenga un `<h2>` que ponga `Menú` y `Footer` respectivamente
+- Crea un layout para la página `catalogo` que solo tenga `<nav>` que ponga `Menú`
 
-```bash
-# npm
-npm install
+# Ejercicio 3 Nuxt
 
-# pnpm
-pnpm install
+- Crea una página `/productos`
+- Cuando se acceda a esa página, se tiene que hacer una redirección a la página `home`
 
-# yarn
-yarn install
+# Ejercicio 4 Nuxt
 
-# bun
-bun install
-```
+- Crea la siguientes rutas:
+  - `series-bonitas`
+  - `series-bonitas/category`
+  - `series-bonitas/category/title`
 
-## Development Server
+## En la página `series-bonitas`
 
-Start the development server on `http://localhost:3000`:
+1. Indicar en que página estamos
+2. Enlace a la categoría `aventuras`
 
-```bash
-# npm
-npm run dev
+## En la página `series-bonitas/category`
 
-# pnpm
-pnpm dev
+1. Indicar que estás en: Series de la categoría: `<category>`
+2. Enlace al `episodio 1 de Spiderman`
 
-# yarn
-yarn dev
+## En la página `series-bonitas/category/title`##
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Mostrar la categoría
+2. Mostrar el título
